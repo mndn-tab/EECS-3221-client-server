@@ -39,6 +39,7 @@ void push_q(queue_t *q)
   if (pthrerr!=0)
     fatalerr("Queue",pthrerr,"Mutex lock failed\n");
   (q->n)++;
+  //printf("push %d\n", q->n);
   pthrerr = pthread_mutex_unlock(&(q->qmutex));
   if (pthrerr!=0)
     fatalerr("Queue",pthrerr,"Mutex unlock failed\n");

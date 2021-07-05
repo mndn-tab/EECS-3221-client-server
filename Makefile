@@ -16,6 +16,8 @@ error.o: error.c error.h
 
 clean:
 	/bin/rm simul.o queue.o error.o simul
+	find . -type f | xargs touch
+	rm -rf $(OBJS)
 
 tar:
 	tar cf Simul.tar *.c *.h Makefile
