@@ -52,22 +52,39 @@ tar:
 
 # To test
 Tested:
+
   with no arguments
+  
   --clients 10 --servers 12 --lambda 0.01 --mu 0.01
+  
   --clients 20 --servers 20 --lambda 0.01 --mu 0.011
 
 
 Simul$ ./simul --clients 10 --servers 12 --lambda 0.01 --mu 0.01
+
 Average waiting time:    6.454545
+
 Average execution time:  85.090912
+
 Average turnaround time: 91.545456
+
 Average queue length: 0.639000
+
 Average interarrival time time: 10.101010
 
 
 Simul$ ./simul --clients 20 --servers 20 --lambda 0.01 --mu 0.011
+
 Average waiting time:    53.752213
+
 Average execution time:  77.933632
+
 Average turnaround time: 131.685852
+
 Average queue length: 12.148000
+
 Average interarrival time time: 4.424779
+
+
+![image](https://github.com/user-attachments/assets/e15a4fbb-6477-4e5e-a32c-085f7c3359c5)
+
